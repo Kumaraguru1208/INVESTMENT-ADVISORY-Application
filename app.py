@@ -10,3 +10,5 @@ if st.button("Get Stock Data"):
     stock = yf.Ticker(ticker)
     data = stock.history(period="6mo")
     st.line_chart(data['Close'])
+
+#Naan Dhan da Batman

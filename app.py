@@ -1,14 +1,8 @@
 import streamlit as st
-import yfinance as yf
 
-st.title("Stock Price Prediction Bot 📈")
-
-# Get stock input
-ticker = st.text_input("Enter Stock Ticker (e.g., AAPL, TSLA)", "AAPL")
-
-if st.button("Get Stock Data"):
-    stock = yf.Ticker(ticker)
-    data = stock.history(period="6mo")
-    st.line_chart(data['Close'])
-
-#Naan Dhan da Batman
+st.markdown("<h1 style='text-align : center;'>TICKR-AI</h1>",unsafe_allow_html=True)
+st.header("How can I Help You ?")
+data=st.text_input("",placeholder="start to type !")
+st.markdown("Hi! I am TICKR . I am here to help you with anything related to Stock Prediction")
+if st.button("SUBMIT"):
+    st.write(f"HI {data}")
